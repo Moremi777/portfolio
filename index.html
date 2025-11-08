@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Olebogeng Moremi</title>
+  <meta name="description" content="Personal portfolio of Olebogeng Moremi — About, Projects, Skills, Certifications, Education, and Contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Devicon for skill icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Three.js background canvas -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-mark">OM</span>
+        <span class="brand-text">Olebogeng Moremi</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">☰</button>
+        <ul id="nav-list">
+          <li><a href="#about" data-nav>About</a></li>
+          <li><a href="#skills" data-nav>Skills</a></li>
+          <li><a href="#projects" data-nav>Projects</a></li>
+          <li><a href="#highlights" data-nav>Highlights</a></li>
+          <li><a href="#certifications" data-nav>Certifications</a></li>
+          <li><a href="#education" data-nav>Education</a></li>
+          <li><a href="#experience" data-nav>Experience</a></li>
+          <li><a href="https://moremi777.github.io/virtual_cv/src/documents/RESUME.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar"></div></div>
+  </header>
+
+  <main id="top" class="site-main" role="main">
+    <!-- Hero -->
+    <section class="section hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1><span class="gradient-text">Olebogeng Moremi</span></h1>
+          <p class="subtitle">BSc Information Technology • CSIS Student Assistant • Passionate about Cloud, Data, and Creative Web Experiences.</p>
+          <div class="actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <h2 id="about-title">About me</h2>
+          <p>
+            I’m an Information Technology graduate (North-West University) and current CSIS Student Assistant. I love building useful, reliable software—from web apps to data-driven systems—and I’m especially interested in Cloud (Azure), data, and human-centered design.
+          </p>
+          <p>
+            Based in Klerksdorp, South Africa. I value collaboration, clear communication, and continuous learning. Outside of work, I enjoy gaming, anime, and exploring creative tech.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="icon">🎓</span>
+              <div>
+                <strong>BSc IT (NWU)</strong>
+                <div class="muted tiny">2022–2024 · Honours 2025–</div>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="icon">🧑‍🏫</span>
+              <div>
+                <strong>CSIS Student Assistant</strong>
+                <div class="muted tiny">Assessment · Invigilation · Support</div>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="icon">🧩</span>
+              <div>
+                <strong>Focus Areas</strong>
+                <div class="muted tiny">Cloud (Azure), Data, Creative Web</div>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="icon">⭐</span>
+              <div>
+                <strong>Top Skills</strong>
+                <div class="muted tiny">JavaScript · Python · C# · MATLAB</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a href="#projects" class="btn btn-primary">See my work</a>
+            <a href="https://moremi777.github.io/virtual_cv/src/documents/RESUME.pdf" target="_blank" rel="noopener" class="btn">Download Resume</a>
+          </div>
+        </div>
+        <aside class="card profile-card" aria-label="Profile image">
+          <img src="./assets/edu/olebogeng.png" alt="Portrait of Olebogeng Moremi" loading="lazy" />
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+
+        <h3 class="subheading">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill"><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML5</span></div>
+          <div class="skill"><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS3</span></div>
+          <div class="skill"><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JavaScript</span></div>
+          <div class="skill"><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></div>
+          <div class="skill"><i class="devicon-csharp-plain colored" aria-hidden="true"></i><span>C# / .NET</span></div>
+          <div class="skill"><i class="devicon-java-plain colored" aria-hidden="true"></i><span>Java</span></div>
+          <div class="skill"><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i><span>C++</span></div>
+          <div class="skill"><i class="devicon-php-plain colored" aria-hidden="true"></i><span>PHP</span></div>
+          <div class="skill"><i class="devicon-threejs-original" aria-hidden="true"></i><span>Three.js</span></div>
+          <div class="skill"><i class="devicon-azure-plain colored" aria-hidden="true"></i><span>Azure</span></div>
+          <div class="skill"><i class="devicon-oracle-original colored" aria-hidden="true"></i><span>Oracle</span></div>
+          <div class="skill"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>MySQL</span></div>
+          <div class="skill"><i class="devicon-windows8-original colored" aria-hidden="true"></i><span>Windows</span></div>
+          <div class="skill"><i class="devicon-linux-plain colored" aria-hidden="true"></i><span>Linux</span></div>
+          <div class="skill"><i class="devicon-git-plain colored" aria-hidden="true"></i><span>Git</span></div>
+        </div>
+
+        <h3 class="subheading">Soft Skills</h3>
+        <ul class="pill-list" role="list">
+          <li>Communication</li>
+          <li>Problem-solving</li>
+          <li>Teamwork</li>
+          <li>Adaptability</li>
+          <li>Critical Thinking</li>
+          <li>Attention to Detail</li>
+        </ul>
+
+        <h3 class="subheading">Languages</h3>
+        <ul class="lang-list" role="list">
+          <li>
+            <div class="lang-row"><span>Setswana</span><span class="badge">100%</span></div>
+            <div class="meter" style="--level: 100%"><span class="meter-bar"></span></div>
+          </li>
+          <li>
+            <div class="lang-row"><span>English</span><span class="badge">100%</span></div>
+            <div class="meter" style="--level: 100%"><span class="meter-bar"></span></div>
+          </li>
+          <li>
+            <div class="lang-row"><span>Afrikaans</span><span class="badge">20%</span></div>
+            <div class="meter" style="--level: 20%"><span class="meter-bar"></span></div>
+          </li>
+        </ul>
+
+        <h3 class="subheading">Hobbies & Interests</h3>
+        <ul class="pill-list" role="list">
+          <li>Cloud Computing & Web Development</li>
+          <li>Comedy Standups</li>
+          <li>Gaming & Anime</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="grid projects-grid">
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/cleanblog.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>Share2Teach</h3>
+              <p class="muted">EdTech • Web App</p>
+            </div>
+            <p>A platform to share, discover, and collaborate on educational resources to empower teaching and learning.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://www.share2teach.co.za" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/back.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>PukkeConnect</h3>
+              <p class="muted">Community • Web App</p>
+            </div>
+            <p>Connecting students and campus communities with events, updates, and peer engagement.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://pukkeconnect-frontend.vercel.app/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/ai-video.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>AI Waste Classification System</h3>
+              <p class="muted">ML • Web App</p>
+            </div>
+            <p>Image-based classifier for waste categories (organic, recyclable, hazardous) with a friendly web UI for sustainable disposal guidance.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://waste-classification.up.railway.app/" target="_blank" rel="noopener">Live</a>
+              <a class="btn btn-ghost" href="https://github.com/Moremi777" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/database.mp4" preload="metadata" playsinline muted autoplay loop></video>
+              
+            </div>
+            <div class="card-header">
+              <h3>Warehouse Stream Processing System</h3>
+              <p class="muted">Azure • Streaming</p>
+            </div>
+            <p>Real-time stock and delivery tracking using simulated streams (inventory scanners + truck GPS) on Microsoft Azure.</p>
+            <div class="card-actions">
+              <span class="btn btn-ghost" aria-disabled="true" title="Private/Local">Live</span>
+              <a class="btn btn-ghost" href="https://github.com/Moremi777" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/flappybird.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>Flappy Bird (Unity)</h3>
+              <p class="muted">Unity • C#</p>
+            </div>
+            <p>A Unity 3D re-creation of Flappy Bird demonstrating gameplay programming, physics, and scene management.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://github.com/Moremi777/Flappy-Bird-made-with-Unity" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/messagingapp.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>Messaging App</h3>
+              <p class="muted">Networking • Java</p>
+            </div>
+            <p>Team-built messaging application for a Computer Networks module alongside a simulated LAN topology in Cisco Packet Tracer.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://github.com/nakoodatasmiyah/CMPG-315---group-8" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/petpals.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>Pet-Pals Animal Clinic System</h3>
+              <p class="muted">Web • Systems Analysis</p>
+            </div>
+            <p>Online appointment booking system developed for a Systems Analysis & Design module; optimized for usability.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://github.com/Nyokong/New-Pet-System" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+          <article class="card project-card">
+            <div class="media video-wrap">
+              <video class="project-video" src="./assets/encryption.mp4" preload="metadata" playsinline muted autoplay loop></video>
+            </div>
+            <div class="card-header">
+              <h3>AES Encryption Program</h3>
+              <p class="muted">Python • Security</p>
+            </div>
+            <p>Encryption application implementing AES and a custom algorithm as part of an Information Security module.</p>
+            <div class="card-actions">
+              <a class="btn btn-ghost" href="https://github.com/Moremi777/AES-Encryption-Algorithm-Program" target="_blank" rel="noopener">Source</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="container">
+        <h2 id="certifications-title">Certifications</h2>
+  <div class="grid certs-grid" id="certs-grid">
+          <!-- Local certificates from assets/certs -->
+          <article class="card cert-card">
+            <div class="cert-media">
+              <iframe src="./assets/certs/app building onramp certificate.pdf" title="App Building Onramp certificate" loading="lazy"></iframe>
+            </div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>App Building Onramp</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/app building onramp certificate.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Calculations on Grouped Data.pdf" title="Calculations on Grouped Data certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Calculations on Grouped Data</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Calculations on Grouped Data.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Calculations with Vectors and Matrices.pdf" title="Calculations with Vectors & Matrices certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Calculations with Vectors & Matrices</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Calculations with Vectors and Matrices.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Clean and Prepare Data for Analysis.pdf" title="Clean & Prepare Data for Analysis certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Clean & Prepare Data for Analysis</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Clean and Prepare Data for Analysis.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Common Data Analysis Techniques.pdf" title="Common Data Analysis Techniques certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Common Data Analysis Techniques</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Common Data Analysis Techniques.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Computer Vision Onramp.pdf" title="Computer Vision Onramp certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Computer Vision Onramp</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Computer Vision Onramp.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Core MATLAB Skills.pdf" title="Core MATLAB Skills certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Core MATLAB Skills</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Core MATLAB Skills.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Data Analysis in MATLAB.pdf" title="Data Analysis in MATLAB certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Data Analysis in MATLAB</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Data Analysis in MATLAB.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Explore Data with MATLAB Plots.pdf" title="Explore Data with MATLAB Plots certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Explore Data with MATLAB Plots</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Explore Data with MATLAB Plots.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Find and Extract Subsets of Data.pdf" title="Find & Extract Subsets of Data certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Find & Extract Subsets of Data</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Find and Extract Subsets of Data.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/FNB APP ACADEMY 2025.pdf" title="FNB App Academy 2025 certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><span>🏦 FNB App Academy</span></div>
+              <span class="muted">2025</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/FNB APP ACADEMY 2025.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/How MATLAB Graphics Work.pdf" title="How MATLAB Graphics Work certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>How MATLAB Graphics Work</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/How MATLAB Graphics Work.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Make and Manipulate Matrices.pdf" title="Make & Manipulate Matrices certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Make & Manipulate Matrices</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Make and Manipulate Matrices.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/MATLAB Desktop Tools and Troubleshooting Scripts.pdf" title="MATLAB Desktop Tools & Troubleshooting certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>MATLAB Desktop Tools & Troubleshooting</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/MATLAB Desktop Tools and Troubleshooting Scripts.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Matlab Onramp.pdf" title="MATLAB Onramp certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>MATLAB Onramp</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Matlab Onramp.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Plot Beyond the Second Dimension.pdf" title="Plot Beyond the Second Dimension certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Plot Beyond the Second Dimension</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Plot Beyond the Second Dimension.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/statistics certificate.pdf" title="Statistics certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><span>📊 Statistics</span></div>
+              <span class="muted">—</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/statistics certificate.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Tables.pdf" title="Tables certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Tables</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Tables.pdf">View</button>
+            </div>
+          </article>
+          <article class="card cert-card">
+            <div class="cert-media"><iframe src="./assets/certs/Visualization in MATLAB.pdf" title="Visualization in MATLAB certificate" loading="lazy"></iframe></div>
+            <div class="cert-meta">
+              <div class="issuer"><i class="devicon-matlab-plain colored" aria-hidden="true"></i><span>Visualization in MATLAB</span></div>
+              <span class="muted">MATLAB</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-ghost" data-pdf="./assets/certs/Visualization in MATLAB.pdf">View</button>
+            </div>
+          </article>
+        </div>
+        <nav id="certs-pagination" class="pagination" aria-label="Certifications pagination"></nav>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title">Education</h2>
+        <div class="grid edu-grid">
+          <article class="card edu-card">
+            <div class="edu-media">
+              <img src="./assets/edu/milner.jpg" alt="Milner High School" loading="lazy" />
+            </div>
+            <div class="edu-body">
+              <h3>National Senior Certificate (NSC)</h3>
+              <p class="muted">Milner High School · 2018 – 2021</p>
+              <p>Bachelor’s Pass with a distinction in Business Studies. Subjects included English HL, Afrikaans FAL, Life Orientation, Mathematics, Physical Sciences, and CAT.</p>
+            </div>
+          </article>
+          <article class="card edu-card">
+            <div class="edu-media">
+              <img src="./assets/edu/nwu.png" alt="North-West University" loading="lazy" />
+            </div>
+            <div class="edu-body">
+              <h3>BSc Information Technology</h3>
+              <p class="muted">North-West University · 2022 – 2024</p>
+              <p>Core modules: AI, Computer Networks, Decision Support Systems I & II, Databases, Advanced Databases, Operating Systems, IT Development.</p>
+            </div>
+          </article>
+          <article class="card edu-card">
+            <div class="edu-media">
+              <img src="./assets/edu/nwu.png" alt="North-West University" loading="lazy" />
+            </div>
+            <div class="edu-body">
+              <h3>BSc Hons in Computer Science & IT</h3>
+              <p class="muted">North-West University · 2025 – Present</p>
+              <p>Research on digital wellness for preschool children via a serious game. Modules: AI, Decision Support Systems, Databases, Information Systems Engineering.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container">
+        <h2 id="experience-title">Work Experience</h2>
+        <ul class="timeline exp-list" role="list">
+          <li>
+            <div class="t-bullet"></div>
+            <div class="t-content exp-card">
+              <h3 data-logo="NWU">CSIS Student Assistant (Temporary)</h3>
+              <p class="muted">North-West University · 2024 – Present</p>
+              <div class="exp-meta">
+                <div class="badges">
+                  <span class="badge">Teaching Support</span>
+                  <span class="badge">Invigilation</span>
+                  <span class="badge">Coordination</span>
+                </div>
+              </div>
+              <ul>
+                <li>Assisted in grading assignments and tests.</li>
+                <li>Communicated with the lecturer for smooth course delivery.</li>
+                <li>Invigilated class tests and quizzes, ensuring academic integrity.</li>
+                <li>Managed attendance when the lecturer was unavailable.</li>
+              </ul>
+              <div class="exp-actions">
+                <a class="btn btn-ghost" href="https://www.nwu.ac.za/it-programmes" target="_blank" rel="noopener">NWU IT Programmes</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="t-bullet"></div>
+            <div class="t-content exp-card">
+              <h3 data-logo="PK">PukkeConnect — Project Manager</h3>
+              <p class="muted">2025 – Present</p>
+              <div class="exp-meta">
+                <div class="badges">
+                  <span class="badge">Agile</span>
+                  <span class="badge">Stakeholder Mgmt</span>
+                  <span class="badge">Roadmapping</span>
+                </div>
+              </div>
+              <ul>
+                <li>Coordinated cross-functional delivery across design and development.</li>
+                <li>Managed timeline, scope, and stakeholder communication.</li>
+                <li>Drove a user-centric roadmap for student community features.</li>
+              </ul>
+              <div class="exp-actions">
+                <a class="btn btn-ghost" href="https://pukkeconnect-frontend.vercel.app/" target="_blank" rel="noopener">Visit PukkeConnect</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="t-bullet"></div>
+            <div class="t-content exp-card">
+              <h3 data-logo="S2T">Share2Teach — Developer</h3>
+              <p class="muted">2025 – Present</p>
+              <div class="exp-meta">
+                <div class="badges">
+                  <span class="badge">Frontend</span>
+                  <span class="badge">Performance</span>
+                  <span class="badge">UX</span>
+                </div>
+              </div>
+              <ul>
+                <li>Built core frontend views and optimized page performance.</li>
+                <li>Integrated UI patterns for resource discovery and collaboration.</li>
+                <li>Collaborated on deployment and continuous improvements.</li>
+              </ul>
+              <div class="exp-actions">
+                <a class="btn btn-ghost" href="https://www.share2teach.co.za" target="_blank" rel="noopener">Visit Share2Teach</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Highlights (Photo Gallery) -->
+    <section id="highlights" class="section" aria-labelledby="highlights-title">
+      <div class="container">
+        <h2 id="highlights-title">Highlights</h2>
+        <div class="grid highlights-grid">
+          <article class="card highlight-card post">
+            <header class="post-header">
+              <h3 class="post-title">Portrait</h3>
+              <div class="post-meta">
+                <time datetime="2025-01">Jan 2025</time>
+                <ul class="tags" role="list">
+                  <li class="tag">Personal</li>
+                </ul>
+              </div>
+            </header>
+            <div class="highlight-media">
+              <img src="./assets/edu/olebogeng.png" alt="Portrait of Olebogeng Moremi" loading="lazy" />
+            </div>
+            <div class="post-body">
+              <p>A simple portrait that reflects my energy and focus.</p>
+            </div>
+          </article>
+          <article class="card highlight-card post">
+            <header class="post-header">
+              <h3 class="post-title">Roots</h3>
+              <div class="post-meta">
+                <time datetime="2021-12">Dec 2021</time>
+                <ul class="tags" role="list">
+                  <li class="tag">Milestones</li>
+                  <li class="tag">School</li>
+                </ul>
+              </div>
+            </header>
+            <div class="highlight-media">
+              <img src="./assets/edu/milner.jpg" alt="Milner High School" loading="lazy" />
+            </div>
+            <div class="post-body">
+              <p>Where the journey started—Milner High School.</p>
+            </div>
+          </article>
+          <article class="card highlight-card post">
+            <header class="post-header">
+              <h3 class="post-title">NWU</h3>
+              <div class="post-meta">
+                <time datetime="2025-02">Feb 2025</time>
+                <ul class="tags" role="list">
+                  <li class="tag">University</li>
+                  <li class="tag">Proud</li>
+                </ul>
+              </div>
+            </header>
+            <div class="highlight-media">
+              <img src="./assets/edu/nwu.png" alt="North-West University" loading="lazy" />
+            </div>
+            <div class="post-body">
+              <p>Proudly NWU—BSc IT and Honours in progress.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="card" aria-label="Contact form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Say hello..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p class="muted tiny">This uses your default email app. No data stored.</p>
+          </form>
+          <div class="card contact-info">
+            <h3>Let's connect</h3>
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:olebogengmoremi84@gmail.com" aria-label="Email">
+                <i class="devicon-google-plain" aria-hidden="true"></i>
+                <div>
+                  <strong>Email</strong>
+                  <span>olebogengmoremi84@gmail.com</span>
+                </div>
+              </a>
+              <a class="contact-card" href="tel:+27678640387" aria-label="Phone">
+                <i class="devicon-android-plain" aria-hidden="true"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+27 67 864 0387</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://wa.me/27678640387" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <i class="devicon-android-plain colored" aria-hidden="true"></i>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>Chat on WhatsApp</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://maps.google.com?q=Moabi%20Street,%20Klerksdorp,%20North%20West,%20South%20Africa" target="_blank" rel="noopener" aria-label="Location">
+                <i class="devicon-google-plain colored" aria-hidden="true"></i>
+                <div>
+                  <strong>Location</strong>
+                  <span>Klerksdorp, South Africa</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://github.com/Moremi777" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="devicon-github-original" aria-hidden="true"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>@Moremi777</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://www.linkedin.com/in/olebogeng-moremi-46798a222" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="devicon-linkedin-plain colored" aria-hidden="true"></i>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>Connect on LinkedIn</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://moremi777.github.io/virtual_cv/src/documents/RESUME.pdf" target="_blank" rel="noopener" aria-label="Download CV">
+                <i class="devicon-windows8-original colored" aria-hidden="true"></i>
+                <div>
+                  <strong>Resume</strong>
+                  <span>Download PDF</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <div class="brand small" aria-label="Brand">
+          <span class="brand-mark">OM</span>
+          <span class="brand-text">Olebogeng Moremi</span>
+        </div>
+        <p class="muted">Building useful, reliable, and human-centered software.</p>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <h3 class="tiny muted">Links</h3>
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="foot-contact">
+        <h3 class="tiny muted">Connect</h3>
+        <ul class="socials" role="list">
+          <li><a href="mailto:olebogengmoremi84@gmail.com" aria-label="Email">✉️</a></li>
+          <li><a href="https://github.com/Moremi777" target="_blank" rel="noopener" aria-label="GitHub"><i class="devicon-github-original"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/olebogeng-moremi-46798a222" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="devicon-linkedin-plain colored"></i></a></li>
+        </ul>
+        <a class="top-link" href="#top">Back to top ↑</a>
+        <p class="muted tiny">© <span id="year"></span> Olebogeng Moremi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- PDF Preview Modal -->
+  <div id="pdf-modal" class="modal" aria-hidden="true" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="pdf-title">
+      <button class="modal-close" aria-label="Close" data-close>×</button>
+      <h3 id="pdf-title" class="tiny">Certificate Preview</h3>
+      <div class="modal-body">
+        <iframe id="pdf-frame" title="Certificate PDF" loading="lazy"></iframe>
+  <p class="muted tiny">If the preview doesn't load, click View on the certificate card to open it here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Preview Modal -->
+  <div id="img-modal" class="modal" aria-hidden="true" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="img-title">
+      <button class="modal-close" aria-label="Close" data-close>×</button>
+      <h3 id="img-title" class="tiny">Photo</h3>
+      <div class="modal-body">
+        <img id="img-frame" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stories & Achievements | Olebogeng Moremi</title>
+  <meta name="description" content="Stories, engagements, achievements, and career moments by Olebogeng Moremi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="./index.html#top" class="brand" aria-label="Home">
+        <span class="brand-mark">OM</span>
+        <span class="brand-text">Olebogeng Moremi</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">☰</button>
+        <ul id="nav-list">
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#certifications">Certifications</a></li>
+          <li><a href="./index.html#experience">Experience</a></li>
+          <li><a href="./index.html#contact" class="btn btn-primary">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="site-main" role="main">
+    <section class="section" aria-label="Stories hero">
+      <div class="container">
+        <h1>Stories & Achievements</h1>
+        <p class="muted">A running log of engagements, milestones, and moments from my journey—like a lightweight LinkedIn feed.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="stories-title">
+      <div class="container">
+        <h2 id="stories-title">Latest Posts</h2>
+        <div class="grid projects-grid" id="stories-grid">
+          <!-- Sample entries; replace images with your own under assets/stories/ -->
+          <article class="card">
+            <div class="media video-wrap">
+              <img src="./assets/edu/nwu.png" alt="Event photo" style="width:100%; display:block; border-radius:10px; border:1px solid var(--border);" />
+            </div>
+            <div class="card-header">
+              <h3>Spoke at Campus Tech Meetup</h3>
+              <span class="muted tiny">2025-08-14</span>
+            </div>
+            <p>Shared insights on building creative web experiences and calming 3D backgrounds with Three.js.</p>
+            <ul class="pill-list" role="list">
+              <li>Public Speaking</li>
+              <li>Community</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="media video-wrap">
+              <img src="./assets/edu/milner.jpg" alt="Achievement photo" style="width:100%; display:block; border-radius:10px; border:1px solid var(--border);" />
+            </div>
+            <div class="card-header">
+              <h3>Completed MATLAB Series</h3>
+              <span class="muted tiny">2024-11-01</span>
+            </div>
+            <p>Wrapped up a series of MathWorks certifications covering analysis, visualization, computer vision, and more.</p>
+            <ul class="pill-list" role="list">
+              <li>Certification</li>
+              <li>Learning</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="media video-wrap">
+              <img src="./assets/edu/olebogeng.png" alt="Engagement photo" style="width:100%; display:block; border-radius:10px; border:1px solid var(--border); object-fit:cover;" />
+            </div>
+            <div class="card-header">
+              <h3>Hosted a Peer Study Session</h3>
+              <span class="muted tiny">2025-03-05</span>
+            </div>
+            <p>Organized a study group to help fellow students prepare for database systems. Great turnout and team spirit!</p>
+            <ul class="pill-list" role="list">
+              <li>Collaboration</li>
+              <li>Leadership</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <div class="brand small" aria-label="Brand">
+          <span class="brand-mark">OM</span>
+          <span class="brand-text">Olebogeng Moremi</span>
+        </div>
+        <p class="muted">Building useful, reliable, and human-centered software.</p>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <h3 class="tiny muted">Links</h3>
+        <ul role="list">
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#skills">Skills</a></li>
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#certifications">Certifications</a></li>
+          <li><a href="./index.html#education">Education</a></li>
+          <li><a href="./index.html#experience">Experience</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="foot-contact">
+        <h3 class="tiny muted">Connect</h3>
+        <ul class="socials" role="list">
+          <li><a href="mailto:olebogengmoremi84@gmail.com" aria-label="Email">✉️</a></li>
+          <li><a href="https://github.com/Moremi777" target="_blank" rel="noopener" aria-label="GitHub"><i class="devicon-github-original"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/olebogeng-moremi-46798a222" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="devicon-linkedin-plain colored"></i></a></li>
+        </ul>
+        <a class="top-link" href="#top">Back to top ↑</a>
+        <p class="muted tiny">© <span id="year"></span> Olebogeng Moremi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
